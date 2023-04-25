@@ -4,15 +4,15 @@ public class App {
     //Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número]. 
 
     public static void main(String[] args) throws Exception {
-   //declarações
-         int numero;
    
-        // entradas: um número
+     // entradas: um número
      Scanner teclado = new Scanner(System.in);
-     numero = teclado.nextInt();
+     System.out.print("Digite um número: ");
+     int numero = teclado.nextInt();
+     teclado.close();
     //processamento : Não tem
     // Saida: o número informado foi [número]
-    System.out.println("o número informado foi: ["+ numero +"]");
+    System.out.printf("o número informado foi: [%d]", numero);
 
 
         
